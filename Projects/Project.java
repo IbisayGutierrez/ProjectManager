@@ -60,5 +60,7 @@ public class Project {
         }
         return ((double) tareasCompletadas / totalTareas) * 100;
     }
-    
+    public void find(){
+        
+    }
 }
