@@ -4,6 +4,7 @@
  */
 package Tasks;
 
+import Comments.Comment;
 import Users.User;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,7 @@ public class Task {
     private String Description;
     private boolean Completed;
     private User Usuario;
-    private List TaskList;
+    private ArrayList<Comment> TaskList;
 
     public int getId() {
         return Id;
@@ -51,5 +52,12 @@ public class Task {
         this(0,"",false,new User());
         
     }
-    
+    public void addComment(Comment comment) {
+    this.TaskList.add(comment);
+}
+
+    public void removeComment(Comment comment) {
+    this.TaskList.remove(comment);
+}
+
 }
