@@ -28,7 +28,7 @@ public class Task {
         return Description;
     }
 
-    public boolean getCompleted() {
+    public boolean isCompleted() {
         return Completed;
     }
 
